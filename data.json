@@ -1,0 +1,238 @@
+[
+{
+"model": "core.theater",
+"pk": 1,
+"fields": {
+"name": "St. Mark Theater",
+"location": "Cairo"
+}
+},
+
+
+{
+    "model": "core.event",
+    "pk": 1,
+    "fields": {
+        "title": "Christmas Concert 2026",
+        "theater": 1,
+        "event_date": "2026-12-25T19:00:00Z"
+    }
+},
+
+{
+    "model": "core.section",
+    "pk": 1,
+    "fields": {
+        "theater": 1,
+        "name": "Middle"
+    }
+},
+{
+    "model": "core.section",
+    "pk": 2,
+    "fields": {
+        "theater": 1,
+        "name": "Right"
+    }
+},
+{
+    "model": "core.section",
+    "pk": 3,
+    "fields": {
+        "theater": 1,
+        "name": "Left"
+    }
+},
+
+{
+    "model": "core.row",
+    "pk": 1,
+    "fields": {
+        "section": 1,
+        "row_number": 1,
+        "seats_per_row": 5
+    }
+},
+{
+    "model": "core.row",
+    "pk": 2,
+    "fields": {
+        "section": 1,
+        "row_number": 2,
+        "seats_per_row": 5
+    }
+},
+{
+    "model": "core.row",
+    "pk": 3,
+    "fields": {
+        "section": 2,
+        "row_number": 1,
+        "seats_per_row": 3
+    }
+},
+{
+    "model": "core.row",
+    "pk": 4,
+    "fields": {
+        "section": 3,
+        "row_number": 1,
+        "seats_per_row": 3
+    }
+},
+
+{
+    "model": "core.seat",
+    "pk": 1,
+    "fields": {
+        "row": 1,
+        "seat_number": "M1"
+    }
+},
+{
+    "model": "core.seat",
+    "pk": 2,
+    "fields": {
+        "row": 1,
+        "seat_number": "M2"
+    }
+},
+{
+    "model": "core.seat",
+    "pk": 3,
+    "fields": {
+        "row": 1,
+        "seat_number": "M3"
+    }
+},
+{
+    "model": "core.seat",
+    "pk": 4,
+    "fields": {
+        "row": 1,
+        "seat_number": "M4"
+    }
+},
+{
+    "model": "core.seat",
+    "pk": 5,
+    "fields": {
+        "row": 1,
+        "seat_number": "M5"
+    }
+},
+
+{
+    "model": "core.seat",
+    "pk": 6,
+    "fields": {
+        "row": 2,
+        "seat_number": "M6"
+    }
+},
+{
+    "model": "core.seat",
+    "pk": 7,
+    "fields": {
+        "row": 2,
+        "seat_number": "M7"
+    }
+},
+{
+    "model": "core.seat",
+    "pk": 8,
+    "fields": {
+        "row": 2,
+        "seat_number": "M8"
+    }
+},
+{
+    "model": "core.seat",
+    "pk": 9,
+    "fields": {
+        "row": 2,
+        "seat_number": "M9"
+    }
+},
+{
+    "model": "core.seat",
+    "pk": 10,
+    "fields": {
+        "row": 2,
+        "seat_number": "M10"
+    }
+},
+
+{
+    "model": "core.seat",
+    "pk": 11,
+    "fields": {
+        "row": 3,
+        "seat_number": "R1"
+    }
+},
+{
+    "model": "core.seat",
+    "pk": 12,
+    "fields": {
+        "row": 3,
+        "seat_number": "R2"
+    }
+},
+{
+    "model": "core.seat",
+    "pk": 13,
+    "fields": {
+        "row": 3,
+        "seat_number": "R3"
+    }
+},
+
+{
+    "model": "core.seat",
+    "pk": 14,
+    "fields": {
+        "row": 4,
+        "seat_number": "L1"
+    }
+},
+{
+    "model": "core.seat",
+    "pk": 15,
+    "fields": {
+        "row": 4,
+        "seat_number": "L2"
+    }
+},
+{
+    "model": "core.seat",
+    "pk": 16,
+    "fields": {
+        "row": 4,
+        "seat_number": "L3"
+    }
+},
+
+{
+    "model": "core.booking",
+    "pk": 1,
+    "fields": {
+        "event": 1,
+        "seat": 2,
+        "user_name": "Farid",
+        "created_at": "2026-06-25T12:00:00Z"
+    }
+},
+{
+    "model": "core.booking",
+    "pk": 2,
+    "fields": {
+        "event": 1,
+        "seat": 8,
+        "user_name": "Michael",
+        "created_at": "2026-06-25T12:05:00Z"
+    }
+}
+
+
+]

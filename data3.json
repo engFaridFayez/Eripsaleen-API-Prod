@@ -1,0 +1,2696 @@
+[
+    {
+        "model": "core.theater",
+        "pk": 1,
+        "fields": {
+            "name": "الأنبا رويس",
+            "location": "Cairo"
+        }
+    },
+    {
+        "model": "core.theater",
+        "pk": 2,
+        "fields": {
+            "name": "الجلاء",
+            "location": "Cairo"
+        }
+    },
+    {
+        "model": "core.theater",
+        "pk": 3,
+        "fields": {
+            "name": "الأنبا بيشوي",
+            "location": "Cairo"
+        }
+    },
+    {
+        "model": "core.show",
+        "pk": 1,
+        "fields": {
+            "title": "درب الصليب",
+            "description": "عرض درب الصليب",
+            "cover": ""
+        }
+    },
+    {
+        "model": "core.show",
+        "pk": 2,
+        "fields": {
+            "title": "القيامة",
+            "description": "عرض القيامة",
+            "cover": ""
+        }
+    },
+    {
+        "model": "core.show",
+        "pk": 3,
+        "fields": {
+            "title": "ليلة تسبيح",
+            "description": "عرض ليلة تسبيح",
+            "cover": ""
+        }
+    },
+    {
+        "model": "core.show",
+        "pk": 4,
+        "fields": {
+            "title": "الميلاد",
+            "description": "عرض الميلاد",
+            "cover": ""
+        }
+    },
+    {
+        "model": "core.seatcategory",
+        "pk": 1,
+        "fields": {
+            "theater": 1,
+            "color": "#D4AF37",
+            "name": "VIP"
+        }
+    },
+    {
+        "model": "core.seatcategory",
+        "pk": 2,
+        "fields": {
+            "theater": 1,
+            "color": "#808080",
+            "name": "Regular"
+        }
+    },
+    {
+        "model": "core.section",
+        "pk": 1,
+        "fields": {
+            "theater": 1,
+            "name": "Main"
+        }
+    },
+    {
+        "model": "core.row",
+        "pk": 1,
+        "fields": {
+            "section": 1,
+            "row_number": "A",
+            "seats_per_row": 10
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 1,
+        "fields": {
+            "row": 1,
+            "seat_number": "1",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 2,
+        "fields": {
+            "row": 1,
+            "seat_number": "2",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 3,
+        "fields": {
+            "row": 1,
+            "seat_number": "3",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 4,
+        "fields": {
+            "row": 1,
+            "seat_number": "4",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 5,
+        "fields": {
+            "row": 1,
+            "seat_number": "5",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 6,
+        "fields": {
+            "row": 1,
+            "seat_number": "6",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 7,
+        "fields": {
+            "row": 1,
+            "seat_number": "7",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 8,
+        "fields": {
+            "row": 1,
+            "seat_number": "8",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 9,
+        "fields": {
+            "row": 1,
+            "seat_number": "9",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 10,
+        "fields": {
+            "row": 1,
+            "seat_number": "10",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.row",
+        "pk": 2,
+        "fields": {
+            "section": 1,
+            "row_number": "B",
+            "seats_per_row": 10
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 11,
+        "fields": {
+            "row": 2,
+            "seat_number": "1",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 12,
+        "fields": {
+            "row": 2,
+            "seat_number": "2",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 13,
+        "fields": {
+            "row": 2,
+            "seat_number": "3",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 14,
+        "fields": {
+            "row": 2,
+            "seat_number": "4",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 15,
+        "fields": {
+            "row": 2,
+            "seat_number": "5",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 16,
+        "fields": {
+            "row": 2,
+            "seat_number": "6",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 17,
+        "fields": {
+            "row": 2,
+            "seat_number": "7",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 18,
+        "fields": {
+            "row": 2,
+            "seat_number": "8",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 19,
+        "fields": {
+            "row": 2,
+            "seat_number": "9",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 20,
+        "fields": {
+            "row": 2,
+            "seat_number": "10",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.row",
+        "pk": 3,
+        "fields": {
+            "section": 1,
+            "row_number": "C",
+            "seats_per_row": 10
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 21,
+        "fields": {
+            "row": 3,
+            "seat_number": "1",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 22,
+        "fields": {
+            "row": 3,
+            "seat_number": "2",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 23,
+        "fields": {
+            "row": 3,
+            "seat_number": "3",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 24,
+        "fields": {
+            "row": 3,
+            "seat_number": "4",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 25,
+        "fields": {
+            "row": 3,
+            "seat_number": "5",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 26,
+        "fields": {
+            "row": 3,
+            "seat_number": "6",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 27,
+        "fields": {
+            "row": 3,
+            "seat_number": "7",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 28,
+        "fields": {
+            "row": 3,
+            "seat_number": "8",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 29,
+        "fields": {
+            "row": 3,
+            "seat_number": "9",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 30,
+        "fields": {
+            "row": 3,
+            "seat_number": "10",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.section",
+        "pk": 2,
+        "fields": {
+            "theater": 1,
+            "name": "Balcony"
+        }
+    },
+    {
+        "model": "core.row",
+        "pk": 4,
+        "fields": {
+            "section": 2,
+            "row_number": "A",
+            "seats_per_row": 10
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 31,
+        "fields": {
+            "row": 4,
+            "seat_number": "1",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 32,
+        "fields": {
+            "row": 4,
+            "seat_number": "2",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 33,
+        "fields": {
+            "row": 4,
+            "seat_number": "3",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 34,
+        "fields": {
+            "row": 4,
+            "seat_number": "4",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 35,
+        "fields": {
+            "row": 4,
+            "seat_number": "5",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 36,
+        "fields": {
+            "row": 4,
+            "seat_number": "6",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 37,
+        "fields": {
+            "row": 4,
+            "seat_number": "7",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 38,
+        "fields": {
+            "row": 4,
+            "seat_number": "8",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 39,
+        "fields": {
+            "row": 4,
+            "seat_number": "9",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 40,
+        "fields": {
+            "row": 4,
+            "seat_number": "10",
+            "category": 1
+        }
+    },
+    {
+        "model": "core.row",
+        "pk": 5,
+        "fields": {
+            "section": 2,
+            "row_number": "B",
+            "seats_per_row": 10
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 41,
+        "fields": {
+            "row": 5,
+            "seat_number": "1",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 42,
+        "fields": {
+            "row": 5,
+            "seat_number": "2",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 43,
+        "fields": {
+            "row": 5,
+            "seat_number": "3",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 44,
+        "fields": {
+            "row": 5,
+            "seat_number": "4",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 45,
+        "fields": {
+            "row": 5,
+            "seat_number": "5",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 46,
+        "fields": {
+            "row": 5,
+            "seat_number": "6",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 47,
+        "fields": {
+            "row": 5,
+            "seat_number": "7",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 48,
+        "fields": {
+            "row": 5,
+            "seat_number": "8",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 49,
+        "fields": {
+            "row": 5,
+            "seat_number": "9",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 50,
+        "fields": {
+            "row": 5,
+            "seat_number": "10",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.row",
+        "pk": 6,
+        "fields": {
+            "section": 2,
+            "row_number": "C",
+            "seats_per_row": 10
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 51,
+        "fields": {
+            "row": 6,
+            "seat_number": "1",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 52,
+        "fields": {
+            "row": 6,
+            "seat_number": "2",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 53,
+        "fields": {
+            "row": 6,
+            "seat_number": "3",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 54,
+        "fields": {
+            "row": 6,
+            "seat_number": "4",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 55,
+        "fields": {
+            "row": 6,
+            "seat_number": "5",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 56,
+        "fields": {
+            "row": 6,
+            "seat_number": "6",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 57,
+        "fields": {
+            "row": 6,
+            "seat_number": "7",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 58,
+        "fields": {
+            "row": 6,
+            "seat_number": "8",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 59,
+        "fields": {
+            "row": 6,
+            "seat_number": "9",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 60,
+        "fields": {
+            "row": 6,
+            "seat_number": "10",
+            "category": 2
+        }
+    },
+    {
+        "model": "core.seatcategory",
+        "pk": 3,
+        "fields": {
+            "theater": 2,
+            "color": "#D4AF37",
+            "name": "VIP"
+        }
+    },
+    {
+        "model": "core.seatcategory",
+        "pk": 4,
+        "fields": {
+            "theater": 2,
+            "color": "#808080",
+            "name": "Regular"
+        }
+    },
+    {
+        "model": "core.section",
+        "pk": 3,
+        "fields": {
+            "theater": 2,
+            "name": "Main"
+        }
+    },
+    {
+        "model": "core.row",
+        "pk": 7,
+        "fields": {
+            "section": 3,
+            "row_number": "A",
+            "seats_per_row": 10
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 61,
+        "fields": {
+            "row": 7,
+            "seat_number": "1",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 62,
+        "fields": {
+            "row": 7,
+            "seat_number": "2",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 63,
+        "fields": {
+            "row": 7,
+            "seat_number": "3",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 64,
+        "fields": {
+            "row": 7,
+            "seat_number": "4",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 65,
+        "fields": {
+            "row": 7,
+            "seat_number": "5",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 66,
+        "fields": {
+            "row": 7,
+            "seat_number": "6",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 67,
+        "fields": {
+            "row": 7,
+            "seat_number": "7",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 68,
+        "fields": {
+            "row": 7,
+            "seat_number": "8",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 69,
+        "fields": {
+            "row": 7,
+            "seat_number": "9",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 70,
+        "fields": {
+            "row": 7,
+            "seat_number": "10",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.row",
+        "pk": 8,
+        "fields": {
+            "section": 3,
+            "row_number": "B",
+            "seats_per_row": 10
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 71,
+        "fields": {
+            "row": 8,
+            "seat_number": "1",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 72,
+        "fields": {
+            "row": 8,
+            "seat_number": "2",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 73,
+        "fields": {
+            "row": 8,
+            "seat_number": "3",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 74,
+        "fields": {
+            "row": 8,
+            "seat_number": "4",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 75,
+        "fields": {
+            "row": 8,
+            "seat_number": "5",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 76,
+        "fields": {
+            "row": 8,
+            "seat_number": "6",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 77,
+        "fields": {
+            "row": 8,
+            "seat_number": "7",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 78,
+        "fields": {
+            "row": 8,
+            "seat_number": "8",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 79,
+        "fields": {
+            "row": 8,
+            "seat_number": "9",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 80,
+        "fields": {
+            "row": 8,
+            "seat_number": "10",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.row",
+        "pk": 9,
+        "fields": {
+            "section": 3,
+            "row_number": "C",
+            "seats_per_row": 10
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 81,
+        "fields": {
+            "row": 9,
+            "seat_number": "1",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 82,
+        "fields": {
+            "row": 9,
+            "seat_number": "2",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 83,
+        "fields": {
+            "row": 9,
+            "seat_number": "3",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 84,
+        "fields": {
+            "row": 9,
+            "seat_number": "4",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 85,
+        "fields": {
+            "row": 9,
+            "seat_number": "5",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 86,
+        "fields": {
+            "row": 9,
+            "seat_number": "6",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 87,
+        "fields": {
+            "row": 9,
+            "seat_number": "7",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 88,
+        "fields": {
+            "row": 9,
+            "seat_number": "8",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 89,
+        "fields": {
+            "row": 9,
+            "seat_number": "9",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 90,
+        "fields": {
+            "row": 9,
+            "seat_number": "10",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.section",
+        "pk": 4,
+        "fields": {
+            "theater": 2,
+            "name": "Balcony"
+        }
+    },
+    {
+        "model": "core.row",
+        "pk": 10,
+        "fields": {
+            "section": 4,
+            "row_number": "A",
+            "seats_per_row": 10
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 91,
+        "fields": {
+            "row": 10,
+            "seat_number": "1",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 92,
+        "fields": {
+            "row": 10,
+            "seat_number": "2",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 93,
+        "fields": {
+            "row": 10,
+            "seat_number": "3",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 94,
+        "fields": {
+            "row": 10,
+            "seat_number": "4",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 95,
+        "fields": {
+            "row": 10,
+            "seat_number": "5",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 96,
+        "fields": {
+            "row": 10,
+            "seat_number": "6",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 97,
+        "fields": {
+            "row": 10,
+            "seat_number": "7",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 98,
+        "fields": {
+            "row": 10,
+            "seat_number": "8",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 99,
+        "fields": {
+            "row": 10,
+            "seat_number": "9",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 100,
+        "fields": {
+            "row": 10,
+            "seat_number": "10",
+            "category": 3
+        }
+    },
+    {
+        "model": "core.row",
+        "pk": 11,
+        "fields": {
+            "section": 4,
+            "row_number": "B",
+            "seats_per_row": 10
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 101,
+        "fields": {
+            "row": 11,
+            "seat_number": "1",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 102,
+        "fields": {
+            "row": 11,
+            "seat_number": "2",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 103,
+        "fields": {
+            "row": 11,
+            "seat_number": "3",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 104,
+        "fields": {
+            "row": 11,
+            "seat_number": "4",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 105,
+        "fields": {
+            "row": 11,
+            "seat_number": "5",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 106,
+        "fields": {
+            "row": 11,
+            "seat_number": "6",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 107,
+        "fields": {
+            "row": 11,
+            "seat_number": "7",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 108,
+        "fields": {
+            "row": 11,
+            "seat_number": "8",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 109,
+        "fields": {
+            "row": 11,
+            "seat_number": "9",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 110,
+        "fields": {
+            "row": 11,
+            "seat_number": "10",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.row",
+        "pk": 12,
+        "fields": {
+            "section": 4,
+            "row_number": "C",
+            "seats_per_row": 10
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 111,
+        "fields": {
+            "row": 12,
+            "seat_number": "1",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 112,
+        "fields": {
+            "row": 12,
+            "seat_number": "2",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 113,
+        "fields": {
+            "row": 12,
+            "seat_number": "3",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 114,
+        "fields": {
+            "row": 12,
+            "seat_number": "4",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 115,
+        "fields": {
+            "row": 12,
+            "seat_number": "5",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 116,
+        "fields": {
+            "row": 12,
+            "seat_number": "6",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 117,
+        "fields": {
+            "row": 12,
+            "seat_number": "7",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 118,
+        "fields": {
+            "row": 12,
+            "seat_number": "8",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 119,
+        "fields": {
+            "row": 12,
+            "seat_number": "9",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 120,
+        "fields": {
+            "row": 12,
+            "seat_number": "10",
+            "category": 4
+        }
+    },
+    {
+        "model": "core.seatcategory",
+        "pk": 5,
+        "fields": {
+            "theater": 3,
+            "color": "#D4AF37",
+            "name": "VIP"
+        }
+    },
+    {
+        "model": "core.seatcategory",
+        "pk": 6,
+        "fields": {
+            "theater": 3,
+            "color": "#808080",
+            "name": "Regular"
+        }
+    },
+    {
+        "model": "core.section",
+        "pk": 5,
+        "fields": {
+            "theater": 3,
+            "name": "Main"
+        }
+    },
+    {
+        "model": "core.row",
+        "pk": 13,
+        "fields": {
+            "section": 5,
+            "row_number": "A",
+            "seats_per_row": 10
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 121,
+        "fields": {
+            "row": 13,
+            "seat_number": "1",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 122,
+        "fields": {
+            "row": 13,
+            "seat_number": "2",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 123,
+        "fields": {
+            "row": 13,
+            "seat_number": "3",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 124,
+        "fields": {
+            "row": 13,
+            "seat_number": "4",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 125,
+        "fields": {
+            "row": 13,
+            "seat_number": "5",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 126,
+        "fields": {
+            "row": 13,
+            "seat_number": "6",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 127,
+        "fields": {
+            "row": 13,
+            "seat_number": "7",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 128,
+        "fields": {
+            "row": 13,
+            "seat_number": "8",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 129,
+        "fields": {
+            "row": 13,
+            "seat_number": "9",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 130,
+        "fields": {
+            "row": 13,
+            "seat_number": "10",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.row",
+        "pk": 14,
+        "fields": {
+            "section": 5,
+            "row_number": "B",
+            "seats_per_row": 10
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 131,
+        "fields": {
+            "row": 14,
+            "seat_number": "1",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 132,
+        "fields": {
+            "row": 14,
+            "seat_number": "2",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 133,
+        "fields": {
+            "row": 14,
+            "seat_number": "3",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 134,
+        "fields": {
+            "row": 14,
+            "seat_number": "4",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 135,
+        "fields": {
+            "row": 14,
+            "seat_number": "5",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 136,
+        "fields": {
+            "row": 14,
+            "seat_number": "6",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 137,
+        "fields": {
+            "row": 14,
+            "seat_number": "7",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 138,
+        "fields": {
+            "row": 14,
+            "seat_number": "8",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 139,
+        "fields": {
+            "row": 14,
+            "seat_number": "9",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 140,
+        "fields": {
+            "row": 14,
+            "seat_number": "10",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.row",
+        "pk": 15,
+        "fields": {
+            "section": 5,
+            "row_number": "C",
+            "seats_per_row": 10
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 141,
+        "fields": {
+            "row": 15,
+            "seat_number": "1",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 142,
+        "fields": {
+            "row": 15,
+            "seat_number": "2",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 143,
+        "fields": {
+            "row": 15,
+            "seat_number": "3",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 144,
+        "fields": {
+            "row": 15,
+            "seat_number": "4",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 145,
+        "fields": {
+            "row": 15,
+            "seat_number": "5",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 146,
+        "fields": {
+            "row": 15,
+            "seat_number": "6",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 147,
+        "fields": {
+            "row": 15,
+            "seat_number": "7",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 148,
+        "fields": {
+            "row": 15,
+            "seat_number": "8",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 149,
+        "fields": {
+            "row": 15,
+            "seat_number": "9",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 150,
+        "fields": {
+            "row": 15,
+            "seat_number": "10",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.section",
+        "pk": 6,
+        "fields": {
+            "theater": 3,
+            "name": "Balcony"
+        }
+    },
+    {
+        "model": "core.row",
+        "pk": 16,
+        "fields": {
+            "section": 6,
+            "row_number": "A",
+            "seats_per_row": 10
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 151,
+        "fields": {
+            "row": 16,
+            "seat_number": "1",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 152,
+        "fields": {
+            "row": 16,
+            "seat_number": "2",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 153,
+        "fields": {
+            "row": 16,
+            "seat_number": "3",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 154,
+        "fields": {
+            "row": 16,
+            "seat_number": "4",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 155,
+        "fields": {
+            "row": 16,
+            "seat_number": "5",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 156,
+        "fields": {
+            "row": 16,
+            "seat_number": "6",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 157,
+        "fields": {
+            "row": 16,
+            "seat_number": "7",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 158,
+        "fields": {
+            "row": 16,
+            "seat_number": "8",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 159,
+        "fields": {
+            "row": 16,
+            "seat_number": "9",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 160,
+        "fields": {
+            "row": 16,
+            "seat_number": "10",
+            "category": 5
+        }
+    },
+    {
+        "model": "core.row",
+        "pk": 17,
+        "fields": {
+            "section": 6,
+            "row_number": "B",
+            "seats_per_row": 10
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 161,
+        "fields": {
+            "row": 17,
+            "seat_number": "1",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 162,
+        "fields": {
+            "row": 17,
+            "seat_number": "2",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 163,
+        "fields": {
+            "row": 17,
+            "seat_number": "3",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 164,
+        "fields": {
+            "row": 17,
+            "seat_number": "4",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 165,
+        "fields": {
+            "row": 17,
+            "seat_number": "5",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 166,
+        "fields": {
+            "row": 17,
+            "seat_number": "6",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 167,
+        "fields": {
+            "row": 17,
+            "seat_number": "7",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 168,
+        "fields": {
+            "row": 17,
+            "seat_number": "8",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 169,
+        "fields": {
+            "row": 17,
+            "seat_number": "9",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 170,
+        "fields": {
+            "row": 17,
+            "seat_number": "10",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.row",
+        "pk": 18,
+        "fields": {
+            "section": 6,
+            "row_number": "C",
+            "seats_per_row": 10
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 171,
+        "fields": {
+            "row": 18,
+            "seat_number": "1",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 172,
+        "fields": {
+            "row": 18,
+            "seat_number": "2",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 173,
+        "fields": {
+            "row": 18,
+            "seat_number": "3",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 174,
+        "fields": {
+            "row": 18,
+            "seat_number": "4",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 175,
+        "fields": {
+            "row": 18,
+            "seat_number": "5",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 176,
+        "fields": {
+            "row": 18,
+            "seat_number": "6",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 177,
+        "fields": {
+            "row": 18,
+            "seat_number": "7",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 178,
+        "fields": {
+            "row": 18,
+            "seat_number": "8",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 179,
+        "fields": {
+            "row": 18,
+            "seat_number": "9",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.seat",
+        "pk": 180,
+        "fields": {
+            "row": 18,
+            "seat_number": "10",
+            "category": 6
+        }
+    },
+    {
+        "model": "core.event",
+        "pk": 1,
+        "fields": {
+            "title": "درب الصليب - الحفلة 1",
+            "show": 1,
+            "theater": 1,
+            "event_date": "2026-07-02T19:00:00Z",
+            "sales_start": "2026-06-12T19:00:00Z",
+            "sales_end": "2026-07-02T18:00:00Z"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 1,
+        "fields": {
+            "event": 1,
+            "category": 1,
+            "price": "300.00"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 2,
+        "fields": {
+            "event": 1,
+            "category": 2,
+            "price": "150.00"
+        }
+    },
+    {
+        "model": "core.event",
+        "pk": 2,
+        "fields": {
+            "title": "درب الصليب - الحفلة 2",
+            "show": 1,
+            "theater": 2,
+            "event_date": "2026-07-03T19:00:00Z",
+            "sales_start": "2026-06-13T19:00:00Z",
+            "sales_end": "2026-07-03T18:00:00Z"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 3,
+        "fields": {
+            "event": 2,
+            "category": 3,
+            "price": "300.00"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 4,
+        "fields": {
+            "event": 2,
+            "category": 4,
+            "price": "150.00"
+        }
+    },
+    {
+        "model": "core.event",
+        "pk": 3,
+        "fields": {
+            "title": "درب الصليب - الحفلة 3",
+            "show": 1,
+            "theater": 3,
+            "event_date": "2026-07-04T19:00:00Z",
+            "sales_start": "2026-06-14T19:00:00Z",
+            "sales_end": "2026-07-04T18:00:00Z"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 5,
+        "fields": {
+            "event": 3,
+            "category": 5,
+            "price": "300.00"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 6,
+        "fields": {
+            "event": 3,
+            "category": 6,
+            "price": "150.00"
+        }
+    },
+    {
+        "model": "core.event",
+        "pk": 4,
+        "fields": {
+            "title": "القيامة - الحفلة 1",
+            "show": 2,
+            "theater": 1,
+            "event_date": "2026-07-05T19:00:00Z",
+            "sales_start": "2026-06-15T19:00:00Z",
+            "sales_end": "2026-07-05T18:00:00Z"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 7,
+        "fields": {
+            "event": 4,
+            "category": 1,
+            "price": "300.00"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 8,
+        "fields": {
+            "event": 4,
+            "category": 2,
+            "price": "150.00"
+        }
+    },
+    {
+        "model": "core.event",
+        "pk": 5,
+        "fields": {
+            "title": "القيامة - الحفلة 2",
+            "show": 2,
+            "theater": 2,
+            "event_date": "2026-07-06T19:00:00Z",
+            "sales_start": "2026-06-16T19:00:00Z",
+            "sales_end": "2026-07-06T18:00:00Z"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 9,
+        "fields": {
+            "event": 5,
+            "category": 3,
+            "price": "300.00"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 10,
+        "fields": {
+            "event": 5,
+            "category": 4,
+            "price": "150.00"
+        }
+    },
+    {
+        "model": "core.event",
+        "pk": 6,
+        "fields": {
+            "title": "القيامة - الحفلة 3",
+            "show": 2,
+            "theater": 3,
+            "event_date": "2026-07-07T19:00:00Z",
+            "sales_start": "2026-06-17T19:00:00Z",
+            "sales_end": "2026-07-07T18:00:00Z"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 11,
+        "fields": {
+            "event": 6,
+            "category": 5,
+            "price": "300.00"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 12,
+        "fields": {
+            "event": 6,
+            "category": 6,
+            "price": "150.00"
+        }
+    },
+    {
+        "model": "core.event",
+        "pk": 7,
+        "fields": {
+            "title": "ليلة تسبيح - الحفلة 1",
+            "show": 3,
+            "theater": 1,
+            "event_date": "2026-07-08T19:00:00Z",
+            "sales_start": "2026-06-18T19:00:00Z",
+            "sales_end": "2026-07-08T18:00:00Z"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 13,
+        "fields": {
+            "event": 7,
+            "category": 1,
+            "price": "300.00"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 14,
+        "fields": {
+            "event": 7,
+            "category": 2,
+            "price": "150.00"
+        }
+    },
+    {
+        "model": "core.event",
+        "pk": 8,
+        "fields": {
+            "title": "ليلة تسبيح - الحفلة 2",
+            "show": 3,
+            "theater": 2,
+            "event_date": "2026-07-09T19:00:00Z",
+            "sales_start": "2026-06-19T19:00:00Z",
+            "sales_end": "2026-07-09T18:00:00Z"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 15,
+        "fields": {
+            "event": 8,
+            "category": 3,
+            "price": "300.00"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 16,
+        "fields": {
+            "event": 8,
+            "category": 4,
+            "price": "150.00"
+        }
+    },
+    {
+        "model": "core.event",
+        "pk": 9,
+        "fields": {
+            "title": "ليلة تسبيح - الحفلة 3",
+            "show": 3,
+            "theater": 3,
+            "event_date": "2026-07-10T19:00:00Z",
+            "sales_start": "2026-06-20T19:00:00Z",
+            "sales_end": "2026-07-10T18:00:00Z"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 17,
+        "fields": {
+            "event": 9,
+            "category": 5,
+            "price": "300.00"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 18,
+        "fields": {
+            "event": 9,
+            "category": 6,
+            "price": "150.00"
+        }
+    },
+    {
+        "model": "core.event",
+        "pk": 10,
+        "fields": {
+            "title": "الميلاد - الحفلة 1",
+            "show": 4,
+            "theater": 1,
+            "event_date": "2026-07-11T19:00:00Z",
+            "sales_start": "2026-06-21T19:00:00Z",
+            "sales_end": "2026-07-11T18:00:00Z"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 19,
+        "fields": {
+            "event": 10,
+            "category": 1,
+            "price": "300.00"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 20,
+        "fields": {
+            "event": 10,
+            "category": 2,
+            "price": "150.00"
+        }
+    },
+    {
+        "model": "core.event",
+        "pk": 11,
+        "fields": {
+            "title": "الميلاد - الحفلة 2",
+            "show": 4,
+            "theater": 2,
+            "event_date": "2026-07-12T19:00:00Z",
+            "sales_start": "2026-06-22T19:00:00Z",
+            "sales_end": "2026-07-12T18:00:00Z"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 21,
+        "fields": {
+            "event": 11,
+            "category": 3,
+            "price": "300.00"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 22,
+        "fields": {
+            "event": 11,
+            "category": 4,
+            "price": "150.00"
+        }
+    },
+    {
+        "model": "core.event",
+        "pk": 12,
+        "fields": {
+            "title": "الميلاد - الحفلة 3",
+            "show": 4,
+            "theater": 3,
+            "event_date": "2026-07-13T19:00:00Z",
+            "sales_start": "2026-06-23T19:00:00Z",
+            "sales_end": "2026-07-13T18:00:00Z"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 23,
+        "fields": {
+            "event": 12,
+            "category": 5,
+            "price": "300.00"
+        }
+    },
+    {
+        "model": "core.eventseatprice",
+        "pk": 24,
+        "fields": {
+            "event": 12,
+            "category": 6,
+            "price": "150.00"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 1,
+        "fields": {
+            "event": 1,
+            "seat": 1,
+            "user_name": "User 1",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 2,
+        "fields": {
+            "event": 1,
+            "seat": 2,
+            "user_name": "User 2",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 3,
+        "fields": {
+            "event": 1,
+            "seat": 3,
+            "user_name": "User 3",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 4,
+        "fields": {
+            "event": 1,
+            "seat": 4,
+            "user_name": "User 4",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 5,
+        "fields": {
+            "event": 1,
+            "seat": 5,
+            "user_name": "User 5",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 6,
+        "fields": {
+            "event": 1,
+            "seat": 6,
+            "user_name": "User 6",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 7,
+        "fields": {
+            "event": 1,
+            "seat": 7,
+            "user_name": "User 7",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 8,
+        "fields": {
+            "event": 1,
+            "seat": 8,
+            "user_name": "User 8",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 9,
+        "fields": {
+            "event": 1,
+            "seat": 9,
+            "user_name": "User 9",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 10,
+        "fields": {
+            "event": 1,
+            "seat": 10,
+            "user_name": "User 10",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 11,
+        "fields": {
+            "event": 1,
+            "seat": 11,
+            "user_name": "User 11",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 12,
+        "fields": {
+            "event": 1,
+            "seat": 12,
+            "user_name": "User 12",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 13,
+        "fields": {
+            "event": 1,
+            "seat": 13,
+            "user_name": "User 13",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 14,
+        "fields": {
+            "event": 1,
+            "seat": 14,
+            "user_name": "User 14",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 15,
+        "fields": {
+            "event": 1,
+            "seat": 15,
+            "user_name": "User 15",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 16,
+        "fields": {
+            "event": 1,
+            "seat": 16,
+            "user_name": "User 16",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 17,
+        "fields": {
+            "event": 1,
+            "seat": 17,
+            "user_name": "User 17",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 18,
+        "fields": {
+            "event": 1,
+            "seat": 18,
+            "user_name": "User 18",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 19,
+        "fields": {
+            "event": 1,
+            "seat": 19,
+            "user_name": "User 19",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 20,
+        "fields": {
+            "event": 1,
+            "seat": 20,
+            "user_name": "User 20",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 21,
+        "fields": {
+            "event": 1,
+            "seat": 21,
+            "user_name": "User 21",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 22,
+        "fields": {
+            "event": 1,
+            "seat": 22,
+            "user_name": "User 22",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 23,
+        "fields": {
+            "event": 1,
+            "seat": 23,
+            "user_name": "User 23",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 24,
+        "fields": {
+            "event": 1,
+            "seat": 24,
+            "user_name": "User 24",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 25,
+        "fields": {
+            "event": 1,
+            "seat": 25,
+            "user_name": "User 25",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 26,
+        "fields": {
+            "event": 1,
+            "seat": 26,
+            "user_name": "User 26",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 27,
+        "fields": {
+            "event": 1,
+            "seat": 27,
+            "user_name": "User 27",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 28,
+        "fields": {
+            "event": 1,
+            "seat": 28,
+            "user_name": "User 28",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 29,
+        "fields": {
+            "event": 1,
+            "seat": 29,
+            "user_name": "User 29",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.booking",
+        "pk": 30,
+        "fields": {
+            "event": 1,
+            "seat": 30,
+            "user_name": "User 30",
+            "email": "",
+            "phone_number": "",
+            "image": "",
+            "created_at": "2026-06-01T10:00:00Z"
+        }
+    }
+]
