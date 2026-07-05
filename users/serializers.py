@@ -43,6 +43,8 @@ class UserSerializer(serializers.ModelSerializer):
             'id',
             'username',
             'full_name',
+            'is_staff',
+            'is_active',
             'phone',
             'joined_date',
             'birth_date',
