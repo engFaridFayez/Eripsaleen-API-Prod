@@ -18,11 +18,7 @@ router = DefaultRouter()
 
 router.register(r'theaters', TheaterViewSet, basename='theater')
 router.register("admin/theaters",AdminTheaterViewSet,basename="admin-theaters")
-router.register(
-    r"seat-categories",
-    SeatCategoryViewSet,
-    basename="seat-category"
-)
+router.register(r"seat-categories",SeatCategoryViewSet,basename="seat-category")
 router.register(r'events', EventViewSet, basename='event')
 router.register(r"shows",ShowViewSet,basename="shows")
 router.register(r'sections', SectionViewSet, basename='section')
@@ -32,9 +28,5 @@ router.register(r'bookings', BookingViewSet, basename='booking')
 
 urlpatterns = [
     path('', include(router.urls)),
-    path(
-        'multi-booking/',
-        MultiBookingView.as_view(),
-        name='multi-booking'
-    ),
+    path('multi-booking/',MultiBookingView.as_view(),name='multi-booking'),
 ]
