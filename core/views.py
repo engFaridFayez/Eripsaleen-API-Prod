@@ -27,6 +27,7 @@ from .serializers import (
     RowDropdownSerializer,
     RowSerializerSimple,
     SeatCategorySerializer,
+    SeatCreateSerializer,
     SeatSerializerSimple,
     SectionDropdownSerializer,
     SectionSerializerSimple,
@@ -200,7 +201,12 @@ class RowViewSet(viewsets.ModelViewSet):
 class SeatViewSet(viewsets.ModelViewSet):
     permission_classes = [ReadOnlyOrAdmin]
     queryset = Seat.objects.all()
-    serializer_class = SeatSerializerSimple
+
+    def get_serializer_class(self):
+        if self.action in ["create", "update", "partial_update"]:
+            return SeatCreateSerializer
+
+        return SeatSerializerSimple
 
 class MultiBookingView(APIView):
     permission_classes = [permissions.AllowAny]

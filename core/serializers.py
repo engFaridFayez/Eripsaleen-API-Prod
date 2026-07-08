@@ -504,3 +504,11 @@ class SeatCategorySerializer(serializers.ModelSerializer):
         return attrs
     
 
+class SeatCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Seat
+        fields = [
+            "row",
+            "seat_number",
+            "category",
+        ]
