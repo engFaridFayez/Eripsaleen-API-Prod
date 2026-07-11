@@ -255,7 +255,7 @@ class MultiBookingView(APIView):
 class BookingViewSet(viewsets.ModelViewSet):
     queryset = Booking.objects.all()
     serializer_class = BookingAdminSerializer
-    permission_classes = [permissions.AllowAny]  # غيّرها لصلاحيات الأدمن لاحقًا
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
     @action(detail=True, methods=["patch"])
     def change_status(self, request, pk=None):
