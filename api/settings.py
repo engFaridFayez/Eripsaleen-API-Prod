@@ -134,6 +134,12 @@ AXES_LOCKOUT_PARAMETERS = [
 ]
 AXES_ENABLE_ACCESS_FAILURE_LOG = True
 
+AXES_IPWARE_PROXY_COUNT = 1
+AXES_IPWARE_META_PRECEDENCE_ORDER = [
+    "HTTP_X_FORWARDED_FOR",
+    "REMOTE_ADDR",
+]
+
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
 
