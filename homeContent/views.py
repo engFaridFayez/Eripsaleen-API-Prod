@@ -1,6 +1,7 @@
 from rest_framework import viewsets , status
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from core.permissions import ReadOnlyOrAdmin
 from .models import (
     Category,
     SubCategory,
@@ -24,6 +25,7 @@ from .serializers import (
 )
 
 class CategoryView(viewsets.ModelViewSet):
+    permission_classes = [ReadOnlyOrAdmin]
     queryset = Category.objects.all()
 
     def get_serializer_class(self):
@@ -32,6 +34,7 @@ class CategoryView(viewsets.ModelViewSet):
         return CategoryReadSerializer
 
 class SubCategoryView(viewsets.ModelViewSet):
+    permission_classes = [ReadOnlyOrAdmin]
     queryset = SubCategory.objects.select_related(
         "category",
     )
@@ -42,6 +45,7 @@ class SubCategoryView(viewsets.ModelViewSet):
         return SubCategoryReadSerializer
 
 class GalleryImageView(viewsets.ModelViewSet):
+    permission_classes = [ReadOnlyOrAdmin]
     queryset = GalleryImage.objects.select_related(
         "sub_category",
     )
@@ -77,6 +81,7 @@ class GalleryImageView(viewsets.ModelViewSet):
         )
 
 class VideoView(viewsets.ModelViewSet):
+    permission_classes = [ReadOnlyOrAdmin]
     queryset = Video.objects.select_related(
         "sub_category",
         "sub_category__category",
@@ -89,6 +94,7 @@ class VideoView(viewsets.ModelViewSet):
 
 
 class FrontCategoryViewSet(viewsets.ReadOnlyModelViewSet):
+    permission_classes = [ReadOnlyOrAdmin]
     queryset = Category.objects.prefetch_related(
         "subcategories",
     )
@@ -96,6 +102,7 @@ class FrontCategoryViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = CategoryWithSubCategoriesSerializer
 
 class FrontGalleryViewSet(viewsets.ReadOnlyModelViewSet):
+    permission_classes = [ReadOnlyOrAdmin]
     serializer_class = FrontGalleryImageSerializer
 
     def get_queryset(self):
@@ -117,6 +124,7 @@ class FrontGalleryViewSet(viewsets.ReadOnlyModelViewSet):
         return queryset
 
 class FrontVideoViewSet(viewsets.ReadOnlyModelViewSet):
+    permission_classes = [ReadOnlyOrAdmin]
     serializer_class = FrontVideoSerializer
 
     def get_queryset(self):
