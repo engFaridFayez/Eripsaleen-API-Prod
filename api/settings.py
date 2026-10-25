@@ -45,6 +45,7 @@ CORS_ALLOWED_ORIGINS = [
 # Application definition
 
 INSTALLED_APPS = [
+    'homeContent',
     'axes',
     'rest_framework',
     'users',
