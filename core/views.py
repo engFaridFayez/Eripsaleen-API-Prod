@@ -94,8 +94,40 @@ class EventViewSet(viewsets.ModelViewSet):
             'event_id': event.id,
             'event_title': event.title,
             'theater': event.theater.name,
+            'booking_closed': event.booking_closed,
             'sections': serializer.data
         })
+    
+    @action(detail=True, methods=["patch"], url_path="toggle-booking")
+    def toggle_booking(self, request, pk=None):
+        event = self.get_object()
+
+        booking_closed = request.data.get("booking_closed")
+
+        if not isinstance(booking_closed, bool):
+            return Response(
+                {
+                    "error": "booking_closed must be true or false."
+                },
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+
+        event.booking_closed = booking_closed
+        event.save(update_fields=["booking_closed"])
+
+        return Response(
+            {
+                "event_id": event.id,
+                "booking_closed": event.booking_closed,
+                "message": (
+                    "تم غلق الحجز لهذا العرض."
+                    if event.booking_closed
+                    else "تم فتح الحجز لهذا العرض."
+                ),
+            },
+            status=status.HTTP_200_OK,
+        )
+
 
 class TheaterViewSet(viewsets.ModelViewSet):
     queryset = Theater.objects.all()

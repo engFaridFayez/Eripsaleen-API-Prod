@@ -27,7 +27,7 @@ class Event(models.Model):
     event_date = models.DateTimeField()
     sales_start = models.DateTimeField()
     sales_end = models.DateTimeField()
-
+    booking_closed = models.BooleanField(default=False)
     def __str__(self):
         return self.title or self.show.title
 

@@ -37,7 +37,8 @@ class EventSerializer(serializers.ModelSerializer):
             'sales_start',
             'sales_end',
             'show',
-            'show_name'
+            'show_name',
+            'booking_closed'
         ]
 
 class TheaterDetailSerializer(serializers.ModelSerializer):
@@ -322,6 +323,11 @@ class MultiBookingSerializer(serializers.Serializer):
 
             event = get_object_or_404(Event, id=event_id)
 
+            if event.booking_closed:
+                raise serializers.ValidationError({
+                    "booking": "تم غلق الحجز لهذا العرض"
+                })
+
             seat_ids = [a["seat"] for a in attendees]
 
             seats = (
@@ -389,7 +395,8 @@ class ShowEventSerializer(serializers.ModelSerializer):
             "id",
             "title",
             "theater",
-            "event_date"
+            "event_date",
+            'booking_closed',
         ]
 
 class ShowSerializer(serializers.ModelSerializer):
